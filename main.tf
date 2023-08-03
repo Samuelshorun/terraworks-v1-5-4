@@ -20,6 +20,7 @@ resource "azurerm_resource_group" "Terralabs" {
   location = "West Europe"
 }
 
+#this is the new changes
 # Create a virtual network within the resource group
 resource "azurerm_virtual_network" "Terralabs" {
   name                = "v-net"
