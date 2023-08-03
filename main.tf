@@ -16,14 +16,14 @@ provider "azurerm" {
 
 # Create a resource group
 resource "azurerm_resource_group" "Terralabs" {
-  name     = "example-resources"
+  name     = "Terralabs-rg"
   location = "West Europe"
 }
 
 # Create a virtual network within the resource group
 resource "azurerm_virtual_network" "Terralabs" {
   name                = "v-net"
-  resource_group_name = azurerm_resource_group.example.name
-  location            = azurerm_resource_group.example.location
+  resource_group_name = azurerm_resource_group.Terralabs.name
+  location            = azurerm_resource_group.Terralabs.location
   address_space       = ["10.0.0.0/16"]
 }
