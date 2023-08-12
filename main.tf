@@ -28,3 +28,4 @@ resource "azurerm_virtual_network" "Terralabs" {
   location            = azurerm_resource_group.Terralabs.location
   address_space       = ["10.0.0.0/16"]
 }
+
